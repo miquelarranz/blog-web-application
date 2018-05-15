@@ -19,8 +19,11 @@ Since the project is written using [ES6 (EcmaScript 6)](http://es6-features.org/
 ```
 yarn run webpack
 ```
-
-
+or
+```
+yarn run webpack --watch
+```
+if you want Webpack to compile the files when you do a change on a file automatically.
 
 ## License
 
