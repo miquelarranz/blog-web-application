@@ -1,0 +1,22 @@
+{
+  "name": "blog-web-application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/miquelarranz/blog-web-application.git",
+  "author": "miquelarranz <miquelarranz@github.com>",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "webpack": "webpack"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "babel-loader": "^8.0.0-beta",
+    "webpack-cli": "^2.1.2"
+  }
+}
