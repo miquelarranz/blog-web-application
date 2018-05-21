@@ -1,22 +1,35 @@
 {
-  "name": "blog-web-application",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/miquelarranz/blog-web-application.git",
-  "author": "miquelarranz <miquelarranz@github.com>",
-  "scripts": {
-    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "start": "http-server",
-    "webpack": "webpack"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "webpack": "^4.8.3"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "babel-loader": "^8.0.0-beta",
-    "webpack-cli": "^2.1.2"
-  }
+    "name": "blog-web-application",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/miquelarranz/blog-web-application.git",
+    "author": "miquelarranz <miquelarranz@github.com>",
+    "scripts": {
+        "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+        "start": "webpack-dev-server",
+        "webpack": "webpack",
+        "clean": "rm -rf node_modules && yarn cache clean --force && yarn install"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "bulma": "^0.7.1",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "webpack": "^4.8.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "css-loader": "^0.28.11",
+        "file-loader": "^1.1.11",
+        "mini-css-extract-plugin": "^0.4.0",
+        "node-sass": "4.8.3",
+        "sass-loader": "^6.0.7",
+        "style-loader": "^0.21.0",
+        "webpack-cli": "^2.1.3",
+        "webpack-dev-server": "^3.1.4"
+    }
 }

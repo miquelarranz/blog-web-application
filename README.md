@@ -17,13 +17,8 @@ yarn install
 Since the project is written using [ES6 (EcmaScript 6)](http://es6-features.org/) we need a compiler to make it compatible with all the browsers. We will use [Babel](https://babeljs.io/) with [Webpack](https://webpack.js.org/concepts/) to make it work. In order to run the project you need to run this command:
 
 ```
-yarn run webpack
+yarn run start
 ```
-or
-```
-yarn run webpack --watch
-```
-if you want Webpack to compile the files when you do a change on a file automatically.
 
 ## License
 
